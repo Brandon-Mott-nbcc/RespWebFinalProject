@@ -17,13 +17,24 @@
       crossorigin="anonymous"
     ></script>
     <style>
-
+      #grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }  
+      #header {
+        border: solid thick black;
+        padding: 10px;
+      }  
     </style>
     <title><!--Write the title name here--></title>
   </head>
-  <body>
-    <button id="menu"></button>
-    <h1></h1>
+  <body id="grid">
+    <div id="header">
+      <button id="menu"></button>
+      <h1></h1>
+    </div>
+
     <div id="body">
       <div id="coverImg"></div>
       <div id="card">
