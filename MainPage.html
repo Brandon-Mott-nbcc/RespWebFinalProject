@@ -16,11 +16,6 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      @media only screen and (max-width: 576px) {
-        #navBar {
-          display: none;
-        }
-      }
       #grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -44,7 +39,7 @@
       #center {
         text-align: center;
       }
-      @media screen and (min-width: 768px) and (max-width: 991) {
+      @media screen and (min-width: 577px) and (max-width: 991) {
       }
       @media screen and (max-width: 992px) {
       }
@@ -52,7 +47,7 @@
     <title><!--Write the title name here--></title>
   </head>
   <body id="grid">
-    <div class="d-sm-none">
+    <div class=" d-block d-sm-none">
       <button
         class="btn btn-success"
         type="button"
@@ -162,7 +157,7 @@
         </ul>
       </div>
     </div>
-    <nav id="navBar" class="navbar navbar-expand-sm bg-light">
+    <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-lg-block">
       <div class="container-fluid">
         <div class="navbar-brand">Italy</div>
         <div>
@@ -178,7 +173,7 @@
       </div>
     </nav>
     <div id="header">
-      <button id="menu" class="btn">Menu</button>
+      <button id="menu" class="btn d-none d-sm-block d-lg-none">Menu</button>
       <h1>Welcome to Italy</h1>
     </div>
 
