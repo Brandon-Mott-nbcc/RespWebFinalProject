@@ -21,6 +21,7 @@
         grid-template-columns: 1fr;
         gap: 15px;
         background-color: slategray;
+
       }
       #header {
         border-bottom: solid thick black;
@@ -38,11 +39,15 @@
       #center {
         text-align: center;
       }
+      @media screen and (min-width: 577px) and (max-width: 991) {
+      }
+      @media screen and (max-width: 992px) {
+      }
     </style>
     <title><!--Write the title name here--></title>
   </head>
   <body id="grid">
-    <div class="d-sm-none">
+    <div class=" d-block d-sm-none">
       <button
         class="btn btn-success"
         type="button"
@@ -168,7 +173,7 @@
       </div>
     </nav>
     <div id="header">
-      <button id="menu" class="btn">Menu</button>
+      <button id="menu" class="btn d-none d-sm-block d-lg-none">Menu</button>
       <h1>Welcome to Italy</h1>
     </div>
 
@@ -249,6 +254,7 @@
           </div>
         </div>
       </div>
+      <div id="card"></div>
     </div>
   </body>
 </html>
