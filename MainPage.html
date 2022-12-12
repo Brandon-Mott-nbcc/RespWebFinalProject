@@ -20,9 +20,10 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
+        background-color: slategray;
       }
       #header {
-        border: solid thick black;
+        border-bottom: solid thick black;
         padding: 10px;
         display: grid;
         grid-template-columns: 15% 70% 15%;
@@ -33,6 +34,9 @@
       #menu {
         background-color: #008C45;
         color: whitesmoke;
+      }
+      #center{
+        text-align: center;
       }
     </style>
     <title><!--Write the title name here--></title>
@@ -49,12 +53,13 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed text-center"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
               aria-expanded="false"
               aria-controls="flush-collapseOne"
+              
             >
               <!--Topic Title-->Item 1
             </button>
