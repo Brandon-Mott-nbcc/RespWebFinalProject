@@ -39,11 +39,16 @@
       #center {
         text-align: center;
       }
-      @media screen and (min-width: 577px) and (max-width: 991) {
-      }
+
       @media screen and (min-width: 992px) {
         h1{
           grid-column: 2 /span 1;
+        }
+      }
+      @media screen and (min-width:768px) {
+        #content {
+          display: grid;
+          grid-template-columns: 2fr 5fr 2fr;
         }
       }
     </style>
@@ -277,7 +282,7 @@
       <h1>Welcome to Italy</h1>
     </div>
 
-    <div id="body">
+    <div id="content">
       <div id="coverImg"></div>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
