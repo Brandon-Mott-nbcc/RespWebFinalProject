@@ -21,6 +21,7 @@
         grid-template-columns: 1fr;
         gap: 15px;
         background-color: slategray;
+
       }
       #header {
         border-bottom: solid thick black;
@@ -38,10 +39,124 @@
       #center {
         text-align: center;
       }
+      @media screen and (min-width: 577px) and (max-width: 991) {
+      }
+      @media screen and (max-width: 992px) {
+      }
     </style>
     <title><!--Write the title name here--></title>
   </head>
   <body id="grid">
+    <div class=" d-block d-sm-none">
+      <button
+        class="btn btn-success"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#menuList"
+        aria-controls="menuList"
+      >
+        Menu
+      </button>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="menuList"
+      aria-labelledby="menuLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="menuLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body container">
+        <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="pill"
+              data-bs-target="#australia"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-australia"
+              aria-selected="true"
+            >
+              Home
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#brazil"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-brazil"
+              aria-selected="false"
+            >
+              Famous
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#canada"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-canada"
+              aria-selected="false"
+            >
+              Location
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#china"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-china"
+              aria-selected="false"
+            >
+              National/Natural
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#cuba"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-cuba"
+              aria-selected="false"
+            >
+              Demo/Culture
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#egypt"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-egypt"
+              aria-selected="false"
+            >
+              Economy/Cities
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
     <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-lg-block">
       <div class="container-fluid">
         <div class="navbar-brand">Italy</div>
@@ -248,6 +363,7 @@
           </div>
         </div>
       </div>
+      <div id="card"></div>
     </div>
   </body>
 </html>
