@@ -64,13 +64,10 @@
         margin: 2px;
       }        
       .carouselImage {
-        width: 40rem;
+        max-width: 40rem;
         height: 100%;
       }
-      #carousel {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-      }
+
 
 
       @media screen and (min-width: 992px) {
@@ -78,14 +75,22 @@
           grid-column: 2 /span 1;
         }
         #flagLeft,#flagRight {
-          grid-template-columns: 1fr 1fr;
-          gap: 1.5rem;
+          display: none;
+        }
+        
+        #accordionFlushExample{
+          grid-column: span 2;
+          margin-left: 2rem;
+        }
+        #flagRight {
+          grid-template-columns: 1fr 1fr 1fr !important;
           
         }
-        #carousel {
-          margin-left: auto;
-          margin-right: auto;
-          grid-column: span 3;
+        #content {
+          gap: 3rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+          align-items: center;
         }
 
       }
@@ -113,6 +118,8 @@
           background-color:  #CD212A;
           margin-right: 3rem;
         }
+        
+        
       }
     </style>
     <title><!--Write the title name here--></title>
@@ -196,7 +203,7 @@
       <h1>Welcome to Italy</h1>
     </div>
 
-    <div id="content" class="container-lg">
+    <div id="content">
       <div id="carousel" class="d-none d-lg-block carousel">
        
         <div class="carousel-inner">
@@ -252,7 +259,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div id="flagLeft">
+      <div id="flagLeft" class="d-lg-none">
         
         <picture>
           <!--Put Pucture of Italy map here-->
@@ -411,13 +418,16 @@
           </div>
         </div>
       </div>
-      <div id="flagRight">       
+      <div id="flagRight" class="d-lg-none">       
         
           <picture>
             <!--Picture of the statue of david-->
           </picture>
           <picture>
             <!--Picture of Spageti-->
+          </picture>
+          <picture>
+
           </picture>
       </div>
     </div>
