@@ -38,6 +38,19 @@
       #center {
         text-align: center;
       }
+      #infoCard{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      #cardHeader{
+        grid-column: 1 /span 2;
+      }
+      #cardImage{
+        grid-row: 1 / span 2;
+      }
+      #cardText{
+        grid-column: 1 / span 2;
+      }
       @media screen and (min-width: 577px) and (max-width: 991) {
       }
       @media screen and (min-width: 992px) {
@@ -115,7 +128,19 @@
           </ul>
         </div>
       </div>
-      <h1>National Symbols, Natural Features</h1>
+
+      <h1>National Symbols & Natural Features</h1>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Enter Person/Place here</h3>
+      </div>
+      <div id="cardImg">
+        <p>random bs go</p>
+      </div>
+      <div id="cardText">
+        <p>random bs go</p>
+      </div>
     </div>
   </body>
 </html>
