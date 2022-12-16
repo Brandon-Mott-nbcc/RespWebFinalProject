@@ -38,24 +38,67 @@
       #center {
         text-align: center;
       }
-      @media screen and (min-width: 577px) and (max-width: 991) {
+      #infoCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        box-sizing: border-box;
+        border: solid thin black;
+      }
+      #cardHeader {
+        grid-column: 1 / span 2;
+      }
+      #cardImage {
+        grid-row: 1 / span 2;
+      }
+      #cardText {
+        grid-column: 1 / span 2;
+      }
+      @media screen and (min-width: 768px) {
+        h1 {
+          grid-column: 2 / span 1;
+        }
+        #grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        #header {
+          grid-column: 1 / span 2;
+        }
+        #navBar {
+          grid-column: 1 / span 2;
+        }
+        #cardContainer {
+          column-gap: 20px;
+        }
       }
       @media screen and (min-width: 992px) {
         h1 {
           grid-column: 2 / span 1;
+        }
+        #grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        #header {
+          grid-column: 1 / span 2;
+        }
+        #navBar {
+          grid-column: 1 / span 2;
+        }
+        #cardContainer {
+          column-gap: 20px;
         }
       }
     </style>
     <title><!--Write the title name here--></title>
   </head>
   <body id="grid">
-    
-    <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-lg-block">
+    <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-md-block">
       <div class="container-fluid">
         <div class="navbar-brand">Italy</div>
         <div>
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="MainPage.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="MainPage.html"
+              >Home</a
+            >
             <a class="nav-link" href="FamousPeople.html">Famous</a>
             <a class="nav-link" href="Location.html">Location</a>
             <a class="nav-link" href="NationalSymbols.html">National/Natural</a>
@@ -66,7 +109,7 @@
       </div>
     </nav>
     <div id="header">
-      <div class="d-lg-none">
+      <div class="d-md-none">
         <button
           class="btn btn-success"
           type="button"
@@ -98,16 +141,22 @@
               <a class="btn btn-success" href="MainPage.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="FamousPeople.html">Famous People</a>
+              <a class="btn btn-success" href="FamousPeople.html"
+                >Famous People</a
+              >
             </li>
             <li class="nav-item">
               <a class="btn btn-success" href="Location.html">Location</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="NationalSymbols.html">Naational Symbols</a>
+              <a class="btn btn-success" href="NationalSymbols.html"
+                >Naational Symbols</a
+              >
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="Demographics.html">Demographics and Culture</a>
+              <a class="btn btn-success" href="Demographics.html"
+                >Demographics and Culture</a
+              >
             </li>
             <li class="nav-item">
               <a class="btn btn-success" href="Economy.html">Economy</a>
