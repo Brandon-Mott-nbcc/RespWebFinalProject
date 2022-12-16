@@ -38,24 +38,50 @@
       #center {
         text-align: center;
       }
-      #infoCard{
+      #infoCard {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        box-sizing: border-box;
       }
-      #cardHeader{
-        grid-column: 1 /span 2;
+      #cardHeader {
+        grid-column: 1 / span 2;
       }
-      #cardImage{
+      #cardImage {
         grid-row: 1 / span 2;
       }
-      #cardText{
+      #cardText {
         grid-column: 1 / span 2;
       }
       @media screen and (min-width: 577px) and (max-width: 991) {
+        #grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        #header {
+          grid-column: 1 / span 2;
+        }
+        #navBar{
+          grid-column: 1 / span 2; 
+        }
+        #cardContainer{
+          column-gap: 20px;
+
+        }
       }
       @media screen and (min-width: 992px) {
         h1 {
           grid-column: 2 / span 1;
+        }
+        #grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        #header {
+          grid-column: 1 / span 2;
+        }
+        #navBar{
+          grid-column: 1 / span 2; 
+        }
+        #cardContainer{
+          column-gap: 20px;
         }
       }
     </style>
@@ -288,15 +314,32 @@
       </div>
       <h1>National Symbols & Natural Features</h1>
     </div>
-    <div id="infoCard">
-      <div id="cardHeader">
-        <h3>Enter Person/Place here</h3>
+
+    <div id="cardContainer">
+      <div id="infoCard">
+        <div id="cardHeader">
+          <h3>Enter Person/Place here</h3>
+        </div>
+        <div id="cardImg">
+          <p>random bs go</p>
+        </div>
+        <div id="cardText">
+          <p>random bs go</p>
+        </div>
       </div>
-      <div id="cardImg">
-        <p>random bs go</p>
-      </div>
-      <div id="cardText">
-        <p>random bs go</p>
+    </div>
+
+    <div id="cardContainer">
+      <div id="infoCard">
+        <div id="cardHeader">
+          <h3>Enter Person/Place here</h3>
+        </div>
+        <div id="cardImg">
+          <p>random bs go</p>
+        </div>
+        <div id="cardText">
+          <p>random bs go</p>
+        </div>
       </div>
     </div>
   </body>
