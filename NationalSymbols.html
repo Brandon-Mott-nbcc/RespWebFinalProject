@@ -38,24 +38,54 @@
       #center {
         text-align: center;
       }
-      #infoCard{
+      #infoCard {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        box-sizing: border-box;
+        border: solid thin black;
       }
-      #cardHeader{
-        grid-column: 1 /span 2;
-      }
-      #cardImage{
-        grid-row: 1 / span 2;
-      }
-      #cardText{
+      #cardHeader {
         grid-column: 1 / span 2;
       }
-      @media screen and (min-width: 577px) and (max-width: 991) {
+      #cardImage {
+        grid-row: 1 / span 2;
+      }
+      #cardText {
+        grid-column: 1 / span 2;
+      }
+      @media screen and (min-width: 768px) {
+        h1 {
+          grid-column: 2 / span 1;
+        }
+        #grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        #header {
+          grid-column: 1 / span 2;
+        }
+        #navBar{
+          grid-column: 1 / span 2; 
+        }
+        #cardContainer{
+          column-gap: 20px;
+
+        }
       }
       @media screen and (min-width: 992px) {
         h1 {
           grid-column: 2 / span 1;
+        }
+        #grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        #header {
+          grid-column: 1 / span 2;
+        }
+        #navBar{
+          grid-column: 1 / span 2; 
+        }
+        #cardContainer{
+          column-gap: 20px;
         }
       }
     </style>
@@ -63,7 +93,7 @@
   </head>
   <body id="grid">
     
-    <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-lg-block">
+    <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-md-block">
       <div class="container-fluid">
         <div class="navbar-brand">Italy</div>
         <div>
@@ -79,7 +109,7 @@
       </div>
     </nav>
     <div id="header">
-      <div class="d-lg-none">
+      <div class="d-md-none">
         <button
           class="btn btn-success"
           type="button"
@@ -131,15 +161,32 @@
 
       <h1>National Symbols & Natural Features</h1>
     </div>
-    <div id="infoCard">
-      <div id="cardHeader">
-        <h3>Enter Person/Place here</h3>
+
+    <div id="cardContainer">
+      <div id="infoCard">
+        <div id="cardHeader">
+          <h3>Enter Person/Place here</h3>
+        </div>
+        <div id="cardImg">
+          <p>random bs go</p>
+        </div>
+        <div id="cardText">
+          <p>random bs go</p>
+        </div>
       </div>
-      <div id="cardImg">
-        <p>random bs go</p>
-      </div>
-      <div id="cardText">
-        <p>random bs go</p>
+    </div>
+
+    <div id="cardContainer">
+      <div id="infoCard">
+        <div id="cardHeader">
+          <h3>Enter Person/Place here</h3>
+        </div>
+        <div id="cardImg">
+          <p>random bs go</p>
+        </div>
+        <div id="cardText">
+          <p>random bs go</p>
+        </div>
       </div>
     </div>
   </body>
