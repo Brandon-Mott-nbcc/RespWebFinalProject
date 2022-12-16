@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      html {
+        font-size: 0.75rem;
+      }
       #grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -49,14 +52,24 @@
         h1{
           grid-column: 2 /span 1;
         }
+        #flagLeft,#flagRight {
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+          overflow: auto;
+        }
       }
       @media screen and (min-width:768px) {
+        html {
+          font-size: 1rem;
+        }
         #content {
           display: grid;
-          grid-template-columns: 3fr 4fr 3fr;
+          grid-template-columns: 4fr 4fr 4fr;
         }
         #flagLeft,#flagRight {
-          display: block;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
         }
         #flagLeft {
           background-color: #008c45;
@@ -299,7 +312,15 @@
     </div>
 
     <div id="content">
-      <div id="flagLeft"></div>
+      <div id="flagLeft">
+        
+        <picture>
+          <!--Put Pucture of Italy map here-->
+        </picture>
+        <picture>
+          <!--Put Picture of a famous italy building/scenery-->
+        </picture>
+      </div>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -450,7 +471,15 @@
           </div>
         </div>
       </div>
-      <div id="flagRight"></div>
+      <div id="flagRight">       
+        
+          <picture>
+            <!--Picture of the statue of david-->
+          </picture>
+          <picture>
+            <!--Picture of Spageti-->
+          </picture>
+      </div>
     </div>
   </body>
 </html>
