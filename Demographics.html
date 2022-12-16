@@ -38,6 +38,24 @@
       #center {
         text-align: center;
       }
+      .btnGreen{
+        background-color: #008c45;
+        color: whitesmoke;
+        border: solid thin black;
+        margin: 2px;
+      }
+      .btnRed{
+        background-color: #CD212A;
+        color: whitesmoke;
+        border: solid thin black;
+        margin: 2px;
+      }
+      .btnWhite{
+        background-color: whitesmoke;
+        color: black;
+        border: solid thin black;
+        margin: 2px;
+      }
       #infoCard {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -73,6 +91,9 @@
           column-gap: 20px;
           margin: 1.5rem;
         }
+
+      @media screen and (min-width: 577px) and (max-width: 991) {
+
       }
       @media screen and (min-width: 992px) {
         h1 {
@@ -141,30 +162,35 @@
           ></button>
         </div>
         <div class="offcanvas-body container">
-          <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+          <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="btn btn-success" href="MainPage.html">Home</a>
+              <a class="btn btnGreen" href="MainPage.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="FamousPeople.html"
+
+              <a class="btn btnWhite" href="FamousPeople.html"
                 >Famous People</a
               >
+
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="Location.html">Location</a>
+              <a class="btn btnRed" href="Location.html">Location</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="NationalSymbols.html"
+
+              <a class="btn btnGreen" href="NationalSymbols.html"
                 >Naational Symbols</a
               >
+
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="Demographics.html"
+              <a class="btn btnWhite" href="Demographics.html"
                 >Demographics and Culture</a
               >
+
             </li>
             <li class="nav-item">
-              <a class="btn btn-success" href="Economy.html">Economy</a>
+              <a class="btn btnRed" href="Economy.html">Economy</a>
             </li>
           </ul>
         </div>
