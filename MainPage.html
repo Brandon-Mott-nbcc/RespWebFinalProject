@@ -39,11 +39,32 @@
       #center {
         text-align: center;
       }
-      @media screen and (min-width: 577px) and (max-width: 991) {
+      #flagLeft,#flagRight {
+        display: none;
       }
+       
+        
+      
       @media screen and (min-width: 992px) {
         h1{
           grid-column: 2 /span 1;
+        }
+      }
+      @media screen and (min-width:768px) {
+        #content {
+          display: grid;
+          grid-template-columns: 3fr 4fr 3fr;
+        }
+        #flagLeft,#flagRight {
+          display: block;
+        }
+        #flagLeft {
+          background-color: #008c45;
+          margin-left: 3rem;
+        }
+        #flagRight {
+          background-color:  #CD212A;
+          margin-right: 3rem;
         }
       }
     </style>
@@ -119,8 +140,8 @@
       <h1>Welcome to Italy</h1>
     </div>
 
-    <div id="body">
-      <div id="coverImg"></div>
+    <div id="content">
+      <div id="flagLeft"></div>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -195,8 +216,83 @@
             </div>
           </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              <!--Topic Title-->
+              Item 4
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <!--Place a new image, link and description of the topic-->
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              <!--Topic Title-->
+              Item 5
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <!--Place a new image, link and description of the topic-->
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              <!--Topic Title-->
+              Item 6
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <!--Place a new image, link and description of the topic-->
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="card"></div>
+      <div id="flagRight"></div>
     </div>
   </body>
 </html>
