@@ -62,18 +62,35 @@
         color: black;
         border: solid thin black;
         margin: 2px;
+      }        
+      .carouselImage {
+        max-width: 40rem;
+        height: 100%;
       }
 
       @media screen and (min-width: 992px) {
         h1 {
           grid-column: 2 / span 1;
         }
-        #flagLeft,
-        #flagRight {
-          grid-template-columns: 1fr 1fr;
-          gap: 1.5rem;
-          overflow: auto;
+        #flagLeft,#flagRight {
+          display: none;
         }
+        
+        #accordionFlushExample{
+          grid-column: span 2;
+          margin-left: 2rem;
+        }
+        #flagRight {
+          grid-template-columns: 1fr 1fr 1fr !important;
+          
+        }
+        #content {
+          gap: 3rem;
+          margin-left: 5rem;
+          margin-right: 5rem;
+          align-items: center;
+        }
+
       }
       @media screen and (min-width: 768px) {
         html {
@@ -100,6 +117,8 @@
           background-color: #cd212a;
           margin-right: 3rem;
         }
+        
+        
       }
     </style>
     <title>Italy</title>
@@ -180,7 +199,64 @@
     </div>
 
     <div id="content">
-      <div id="flagLeft">
+      <div id="carousel" class="d-none d-lg-block carousel">
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="hith-sistine-chape-2.jpg" alt="Painting" class="carouselImage" class="d-block ">
+            <div class="carousel-caption d-block">
+              <h5><!--Put the name of the page the image is reffering to here--></h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="1200px-Colosseo_2020.jpg" class="carouselImage" class="d-block " alt="">
+            <div class="carousel-caption d-block">
+              <h5><!--Name for second item--></h5>              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="" class="carouselImage" class="d-block w-100" alt="">
+            <div class="carousel-caption d-block">
+              <h5><!--Name for second item--></h5>              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="" class="carouselImage" class="d-block w-100" alt="">
+            <div class="carousel-caption d-block">
+              <h5><!--Name for second item--></h5>              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="" class="carouselImage" class="d-block w-100" alt="">
+            <div class="carousel-caption d-block">
+              <h5><!--Name for second item--></h5>              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="" class="carouselImage" class="d-block w-100" alt="">
+            <div class="carousel-caption d-block">
+              <h5><!--Name for second item--></h5>              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="" class="carouselImage" class="d-block w-100" alt="">
+            <div class="carousel-caption d-block">
+              <h5><!--Name for second item--></h5>              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="flagLeft" class="d-lg-none">
+        
+
         <picture>
           <!--Put Pucture of Italy map here-->
         </picture>
@@ -335,13 +411,18 @@
           </div>
         </div>
       </div>
-      <div id="flagRight">
-        <picture>
-          <!--Picture of the statue of david-->
-        </picture>
-        <picture>
-          <!--Picture of Spageti-->
-        </picture>
+      <div id="flagRight" class="d-lg-none">       
+        
+          <picture>
+            <!--Picture of the statue of david-->
+          </picture>
+          <picture>
+            <!--Picture of Spageti-->
+          </picture>
+          <picture>
+
+          </picture>
+
       </div>
     </div>
   </body>
