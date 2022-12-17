@@ -9,113 +9,15 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="infoPages.css" />
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <style>
-      #grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        background-color: slategray;
-      }
-      #header {
-        border-bottom: solid thick black;
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-      }
-      h1 {
-        text-align: center;
-      }
-      #menu {
-        background-color: #008c45;
-        color: whitesmoke;
-      }
-      #center {
-        text-align: center;
-      }
-      .btnGreen{
-        background-color: #008c45;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnRed{
-        background-color: #CD212A;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnWhite{
-        background-color: whitesmoke;
-        color: black;
-        border: solid thin black;
-        margin: 2px;
-      }
 
-      #infoCard {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        box-sizing: border-box;
-        border: solid thin black;
-      }
-      #cardContainer{
-        margin: 1rem;
-      }
-      #cardHeader {
-        grid-column: 1 / span 2;
-      }
-      #cardImage {
-        grid-row: 1 / span 2;
-      }
-      #cardText {
-        grid-column: 1 / span 2;
-      }
-      @media screen and (min-width: 768px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar {
-          grid-column: 1 / span 2;
-        }
-        #cardContainer {
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-
-      @media screen and (min-width: 577px) and (max-width: 991) {
-
-      }
-      @media screen and (min-width: 992px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar {
-          grid-column: 1 / span 2;
-        }
-        #cardContainer {
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-      }
-    </style>
-    <title><!--Write the title name here--></title>
+    <title>Famous People, Landmarks and History</title>
   </head>
   <body id="grid">
     <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-md-block">
@@ -168,11 +70,7 @@
               <a class="btn btnGreen" href="MainPage.html">Home</a>
             </li>
             <li class="nav-item">
-
-              <a class="btn btnWhite" href="FamousPeople.html"
-                >Famous People</a
-              >
-
+              <a class="btn btnWhite" href="FamousPeople.html">Famous People</a>
             </li>
             <li class="nav-item">
               <a class="btn btnRed" href="Location.html">Location</a>
@@ -180,7 +78,7 @@
             <li class="nav-item">
 
               <a class="btn btnGreen" href="NationalSymbols.html"
-                >Naational Symbols</a
+                >National Symbols</a
               >
 
             </li>
@@ -188,7 +86,7 @@
               <a class="btn btnWhite" href="Demographics.html"
                 >Demographics and Culture</a
               >
-
+              
             </li>
             <li class="nav-item">
               <a class="btn btnRed" href="Economy.html">Economy</a>
@@ -197,17 +95,292 @@
         </div>
       </div>
 
-      <h1>Famous People/Landmarks & History</h1>
+      <h1>Famous People, Landmarks & History</h1>
     </div>
     <div id="infoCard">
       <div id="cardHeader">
-        <h3>Enter Person/Place here</h3>
+        <h3>Leonardo da Vinci</h3>
       </div>
       <div id="cardImg">
-        <p>random bs go</p>
+        <img href="images/DaVinci.jfif" alt="Leonardo da Vinci" />
       </div>
       <div id="cardText">
-        <p>random bs go</p>
+        <p>
+          Leonardo da Vinci was a famous Italian Renaissance artist, known for
+          his paintings, drawings, and notes on various subjects. He is
+          considered a genius and one of the greatest painters in history, and
+          his works, including the Mona Lisa and The Last Supper, are iconic. Da
+          Vinci also made numerous technological inventions, including flying
+          machines and concentrated solar power, but most were not feasible at
+          the time. He made significant discoveries in various fields, but did
+          not publish them and had little impact on science.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Donatello</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/Donatello.jfif"
+          alt="Donato di Niccolò di Betto Bardi"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Donatello was a renowned Florentine sculptor of the Renaissance who
+          studied classical sculpture and used it to create a new Renaissance
+          style. He traveled to other cities, where he worked on commissions and
+          taught others, and his techniques were introduced to other parts of
+          Italy. With financial support from Cosimo de Medici, Donatello created
+          the first freestanding male nude sculpture since antiquity, the famous
+          statue of David. He worked with various materials, including stone,
+          bronze, wood, clay, stucco, and wax, and had several assistants.
+          Donatello is known for his statues in the round, but he also created
+          shallow bas-reliefs for more minor works and large architectural
+          reliefs.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Michelangelo</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/Michelangelo.jfif"
+          alt="Michelangelo di Lodovico Buonarroti Simoni"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Michelangelo was a prominent Italian Renaissance artist known for his
+          sculptures, paintings, architecture, and poetry. He was inspired by
+          classical models and significantly impacted Western art. Michelangelo
+          is considered a quintessential Renaissance man, along with his
+          contemporary Leonardo da Vinci. He is one of the most well-documented
+          artists of the 16th century, and his biographers praised him as the
+          most accomplished artist of his time. Michelangelo achieved fame early
+          with his sculptures of Pietà and David and is known for his
+          influential frescoes on the ceiling of the Sistine Chapel in Rome and
+          on the altar wall of The Last Judgment. He also designed the
+          Laurentian Library and was the architect of St. Peter's Basilica in
+          Rome. Michelangelo's work was admired for its ability to evoke a sense
+          of awe in viewers, and his style influenced the rise of Mannerism.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Raphael</h3>
+      </div>
+      <div id="cardImg">
+        <img href="images/Raphael.jfif" alt="Raffaello Sanzio da Urbino" />
+      </div>
+      <div id="cardText">
+        <p>
+          Raphael was a famous Italian painter and architect during the High
+          Renaissance. He is known for the clarity and ease of composition in
+          his work, as well as his depiction of the Neoplatonic ideal of human
+          grandeur. Along with Leonardo da Vinci and Michelangelo, Raphael is
+          considered one of the three great masters of the period. He had a
+          productive career, running a large workshop and completing a
+          significant amount of work before his early death at 37. Raphael's
+          career can be divided into three phases and styles: his early years in
+          Umbria, a period in Florence where he absorbed artistic traditions,
+          and his final years in Rome working for two popes. Many of his works
+          can be found in the Vatican Palace, including the famous fresco The
+          School of Athens. After his death, Raphael's work had a significant
+          influence on Neoclassical painting, although it was later rejected by
+          groups like the Pre-Raphaelite Brotherhood. Raphael's father was a
+          court painter and Raphael took over the family workshop after his
+          father's death. He trained in the workshop of Perugino and became a
+          fully qualified master by 1500. He worked in various cities in
+          northern Italy before moving to Rome in 1508 to work at the Vatican
+          Palace. He also worked as an architect in Rome and continued to create
+          important works until his death in 1520.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Roman Colosseum</h3>
+      </div>
+      <div id="cardImg">
+        <img href="images/colosseum.jfif" alt="The Roman Colosseum" />
+      </div>
+      <div id="cardText">
+        <p>
+          The Colosseum is an oval amphitheater in the center of Rome, Italy,
+          just east of the Roman Forum. Despite its age, it is the largest
+          ancient amphitheater ever built and is still the largest standing
+          amphitheater today. Construction began under the emperor Vespasian (r.
+          69-79 AD) in 72 and was completed in 80 AD under his successor and
+          heir, Titus (r. 79-81). Further modifications were made during the
+          reign of Domitian. The three emperors that were patrons of the work
+          are known as the Flavian dynasty. The amphitheater was named the
+          Flavian Amphitheatre by later classicists and archaeologists for its
+          association with their family name (Flavius). The Colosseum is built
+          of travertine limestone, tuff (volcanic rock), and brick-faced
+          concrete. It could hold an estimated 50,000 to 80,000 spectators at
+          various points in its history, having an average audience of some
+          65,000; it was used for gladiatorial contests and public spectacles,
+          including animal hunts, executions, re-enactments of famous battles,
+          and dramas based on Roman mythology, and briefly mock sea battles. The
+          building ceased to be used for entertainment in the early medieval
+          era. It was later reused for housing, workshops, quarters for a
+          religious order, a fortress, a quarry, and a Christian shrine.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Trevi Fountain</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/Historic-Trevi-Fountain-in-Rome-Italy.jpg"
+          alt="The Trevi Fountain in Rome"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          The Trevi Fountain (Italian: Fontana di Trevi) is an 18th-century
+          fountain in the Trevi district in Rome, Italy, designed by Italian
+          architect Nicola Salvi and completed by Giuseppe Pannini and several
+          others. Standing 26.3 meters (86 ft) high and 49.15 meters (161.3 ft)
+          wide, it is the largest Baroque fountain in the city and one of the
+          most famous fountains in the world. The fountain has appeared in
+          several films, including Roman Holiday; Three Coins in the Fountain;
+          Federico Fellini's classic, La Dolce Vita; Sabrina Goes to Rome; and
+          The Lizzie McGuire Movie.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Roman Forum</h3>
+      </div>
+      <div id="cardImg">
+        <img href="images/roman_forum.jfif" alt="The Roman Forum" />
+      </div>
+      <div id="cardText">
+        <p>
+          The Roman Forum, also known as the Forum Romanum, is a rectangular
+          plaza surrounded by the ruins of ancient government buildings in Rome.
+          It was initially a marketplace and served as the center of daily life
+          in Rome, with triumphal processions, elections, public speeches,
+          criminal trials, gladiatorial matches, and commercial activities all
+          taking place there. The Forum also had many statues and monuments
+          honoring Rome's notable figures. Today, the Forum is a ruin with
+          intermittent archaeological excavations, attracting millions of
+          tourists yearly. Rome's oldest and most essential structures were
+          located on or near the Forum, including the Regia, the Temple of
+          Vesta, and the Vestal Virgins complex.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Sistine Chapel</h3>
+      </div>
+      <div id="cardImg">
+        <img href="images/sistine_chapel.jfif" alt="The Sistine Chapel" />
+      </div>
+      <div id="cardText">
+        <p>
+          The Sistine Chapel is located in the Apostolic Palace in Vatican City
+          and serves as the pope's official residence. It was built by Pope
+          Sixtus IV between 1473 and 1481 and named after him. The chapel is
+          famous for its frescoes, especially the ceiling and The Last Judgment
+          by Michelangelo. It is also the site of the papal conclave, where a
+          new pope is selected. During the reign of Sixtus IV, a team of
+          Renaissance painters, including Sandro Botticelli, Pietro Perugino,
+          Pinturicchio, and Domenico Ghirlandaio, painted frescoes depicting the
+          Life of Moses and the Life of Christ, along with papal portraits and
+          trompe-l'œil drapery. These paintings were completed in 1482, and the
+          chapel was consecrated and dedicated to the Virgin Mary during a
+          ceremony on the Feast of the Assumption. Between 1508 and 1512,
+          Michelangelo painted the chapel's ceiling under the patronage of Pope
+          Julius II. This project, considered one of the significant artistic
+          achievements in human history, changed the course of Western art.
+          Michelangelo also painted The Last Judgment for Popes Clement VII and
+          Paul III between 1535 and 1541. The fame of Michelangelo's paintings
+          has attracted many visitors to the chapel over the past five
+          centuries.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>History</h3>
+      </div>
+      <div id="cardImg">
+        <p></p>
+      </div>
+      <div id="cardText">
+        <p>
+          The history of Italy covers the ancient period, the Middle Ages, and
+          the modern era. Since classical antiquity, ancient Etruscans, various
+          Italic peoples (such as the Latins, Samnites, and Umbri), Celts, Magna
+          Graecia colonists, and other ancient peoples have inhabited the
+          Italian Peninsula. In antiquity, Italy was the homeland of the Romans
+          and the metropole of the Roman Empire's provinces. Rome was founded as
+          a Kingdom in 753 BC and became a republic in 509 BC when the Roman
+          monarchy was overthrown in favor of a government of the Senate and the
+          People. The Roman Republic then unified Italy at the expense of the
+          peninsula's Etruscans, Celts, and Greek colonists. Rome led Socii, a
+          confederation of the Italic peoples, and later with the rise of Rome,
+          dominated Western Europe, Northern Africa, and the Near East. The
+          Roman Republic saw its fall after the assassination of Julius Caesar.
+          The Roman Empire later dominated Western Europe and the Mediterranean
+          for many centuries, making immeasurable contributions to Western
+          philosophy, science, and art development. After the fall of Rome in AD
+          476, Italy was fragmented into numerous city-states and regional
+          polities; despite seeing famous personalities from its territory and
+          closely related ones (such as Dante Alighieri, Leonardo da Vinci,
+          Michelangelo, Niccolò Machiavelli, Galileo Galilei, and Napoleon
+          Bonaparte) rise, it remained politically divided to a large extent.
+          The maritime republics, particularly Venice and Genoa, rose to great
+          prosperity through shipping, commerce, and banking, acting as Europe's
+          main port of entry for Asian and Near Eastern imported goods and
+          laying the groundwork for capitalism. Central Italy remained under the
+          Papal States, while Southern Italy remained essentially feudal due to
+          a succession of Byzantine, Arab, Norman, Spanish, and Bourbon crowns.
+          The Italian Renaissance spread to the rest of Europe, bringing a
+          renewed interest in humanism, science, exploration, and art with the
+          start of the modern era. Italian explorers (including Marco Polo,
+          Christopher Columbus (Italian: Cristoforo Colombo), and Amerigo
+          Vespucci) discovered new routes to the Far East and the New World,
+          helping to usher in the Age of Discovery, although the Italian states
+          had no occasion to found colonial empires outside of the Mediterranean
+          Basin. By the mid-19th century, the Italian unification by Giuseppe
+          Garibaldi, backed by the Kingdom of Sardinia, led to the establishment
+          of an Italian nation-state. The new Kingdom of Italy, established in
+          1861, quickly modernized and built a colonial empire, controlling
+          parts of Africa and countries along the Mediterranean. At the same
+          time, Southern Italy remained rural and poor, originating the Italian
+          diaspora. In World War I, Italy completed the unification by acquiring
+          Trento and Trieste and gained a permanent seat in the League of
+          Nations' executive council. Italian nationalists considered World War
+          I a mutilated victory because Italy did not have all the territories
+          promised by the Treaty of London (1915). That sentiment led to the
+          rise of the Fascist dictatorship of Benito Mussolini in 1922. The
+          subsequent participation in World War II with the Axis powers,
+          together with Nazi Germany and the Empire of Japan, ended in military
+          defeat, Mussolini's arrest and escape (aided by the German dictator
+          Adolf Hitler), and the Italian Civil War between the Italian
+          Resistance (aided by the Kingdom, now a co-belligerent of the Allies)
+          and a Nazi-fascist puppet state known as the Italian Social Republic.
+          Following the liberation of Italy, the fall of the Social Republic,
+          and the killing of Mussolini at the hands of the Resistance, the 1946
+          Italian constitutional referendum abolished the monarchy and became a
+          republic, reinstated democracy, enjoyed an economic miracle, and
+          founded the European Union (Treaty of Rome), NATO, and the Group of
+          Six (later G7 and G20). It remains a strong economic, cultural,
+          military, and political factor in the 21st century.
+        </p>
       </div>
     </div>
   </body>

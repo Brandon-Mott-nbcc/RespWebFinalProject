@@ -9,119 +9,25 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="infoPages.css" />
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <style>
-      #grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        background-color: slategray;
-      }
-      #header {
-        border-bottom: solid thick black;
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-      }
-      h1 {
-        text-align: center;
-      }
-      #menu {
-        background-color: #008c45;
-        color: whitesmoke;
-      }
-      #center {
-        text-align: center;
-      }
-      .btnGreen{
-        background-color: #008c45;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnRed{
-        background-color: #CD212A;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnWhite{
-        background-color: whitesmoke;
-        color: black;
-        border: solid thin black;
-        margin: 2px;
-      }
 
-      #infoCard{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        box-sizing: border-box;
-        border: solid thin black;
-      }
-      #cardContainer{
-        margin: 1rem;
-      }
-      #cardHeader {
-        grid-column: 1 / span 2;
-      }
-      #cardImage {
-        grid-row: 1 / span 2;
-      }
-      #cardText {
-        grid-column: 1 / span 2;
-      }
-      @media screen and (min-width: 768px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar{
-          grid-column: 1 / span 2; 
-        }
-        #cardContainer{
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-      }
-      @media screen and (min-width: 992px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar{
-          grid-column: 1 / span 2; 
-        }
-        #cardContainer{
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-      }
-    </style>
-    <title><!--Write the title name here--></title>
+    <title>National Symbols and Natural Features</title>
   </head>
   <body id="grid">
-    
     <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-md-block">
       <div class="container-fluid">
         <div class="navbar-brand">Italy</div>
         <div>
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="MainPage.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="MainPage.html"
+              >Home</a
+            >
             <a class="nav-link" href="FamousPeople.html">Famous</a>
             <a class="nav-link" href="Location.html">Location</a>
             <a class="nav-link" href="NationalSymbols.html">National/Natural</a>
@@ -164,25 +70,20 @@
               <a class="btn btnGreen" href="MainPage.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="btn btnWhite" href="FamousPeople.html"
-                >Famous People</a
-              >
-
+              <a class="btn btnWhite" href="FamousPeople.html">Famous People</a>
             </li>
             <li class="nav-item">
               <a class="btn btnRed" href="Location.html">Location</a>
             </li>
             <li class="nav-item">
               <a class="btn btnGreen" href="NationalSymbols.html"
-                >Naational Symbols</a
+                >National Symbols</a
               >
-
             </li>
             <li class="nav-item">
               <a class="btn btnWhite" href="Demographics.html"
                 >Demographics and Culture</a
               >
-
             </li>
             <li class="nav-item">
               <a class="btn btnRed" href="Economy.html">Economy</a>
@@ -197,13 +98,56 @@
     <div id="cardContainer">
       <div id="infoCard">
         <div id="cardHeader">
-          <h3>Enter Person/Place here</h3>
+          <h3>National Symbols</h3>
         </div>
         <div id="cardImg">
-          <p>random bs go</p>
+          <img
+            href="images/national_coat_of_arms.jfif"
+            alt="The Italian National Coat of Arms"
+          />
         </div>
         <div id="cardText">
-          <p>random bs go</p>
+          <p>
+            The three main official symbols, whose typology is present in the
+            symbology of all nations, are:
+          </p>
+          <ul>
+            <li>
+              the flag of Italy, that is, the national flag in green, white and
+              red, as required by article 12 of the Constitution of the Italian
+              Republic;
+            </li>
+            <li>
+              the emblem of Italy, which is the iconic symbol identifying the
+              Italian Republic;
+            </li>
+            <li>
+              The Il Canto Degli Italiani by Goffredo Mameli and Michele Novaro
+              is the Italian national anthem performed at all public events.
+            </li>
+          </ul>
+          <p>
+            The Italian flag is protected by law and anyone found in contempt of
+            it may face criminal penalties. Other official symbols of Italy, as
+            recognized by the Presidency of the Italian Republic, include:
+          </p>
+          <ul>
+            <li>
+              The Presidential Standard of Italy that is the distinctive
+              standard representing the Presidency of the Italian Republic;
+            </li>
+            <li>
+              The Altare della Patria is a national monument in Italy dedicated
+              to King Vittorio Emanuele II of Savoy, the first Sovereign of a
+              united Italy and founder of the Fatherland. It houses the Italian
+              tomb of the Unknown Soldier.
+            </li>
+            <li>
+              The Festa Della Repubblica is a national holiday in Italy
+              commemorating the birth of the Italian Republic on June 2nd, the
+              date of the referendum that abolished the monarchy in 1946.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -211,13 +155,75 @@
     <div id="cardContainer">
       <div id="infoCard">
         <div id="cardHeader">
-          <h3>Enter Person/Place here</h3>
+          <h3>Italian Flag</h3>
         </div>
         <div id="cardImg">
-          <p>random bs go</p>
+          <img href="images/italian_flag.png" alt="The Italian Flag." />
         </div>
         <div id="cardText">
-          <p>random bs go</p>
+          <p>
+            The Italian flag, known as il Tricolore, consists of three vertical
+            stripes of equal size in the colors green, white, and red. The flag
+            is protected by law and is used in the teaching of national symbols
+            in Italian schools. The Tricolour Day, a celebration of the flag,
+            takes place on January 7th and commemorates the first official
+            adoption of the flag by the Cispadane Republic in 1797. The flag
+            played a significant role in the unification of Italy and is now a
+            defining symbol of the country.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="cardContainer">
+      <div id="infoCard">
+        <div id="cardHeader">
+          <h3>Italian Wolf</h3>
+        </div>
+        <div id="cardImg">
+          <img href="images/italianWolf2.jpg" alt="The Italian Wolf." />
+        </div>
+        <div id="cardText">
+          <p>
+            The Italian wolf, a subspecies of grey wolf native to the Italian
+            Peninsula, is known for its cultural significance in Latin and
+            Italian cultures and is informally considered the national animal of
+            Italy. It is found in the Apennine Mountains and Western Alps, and
+            has recently expanded to parts of France and Switzerland. The
+            Italian wolf has been protected in Italy since the 1970s, when its
+            population was at a low of 70-100 individuals. It is now estimated
+            to have a population of 1500-2000 individuals, but illegal hunting
+            and persecution remain a threat. The Italian wolf is distinguished
+            by its unique mtDNA haplotype and skull morphology.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="cardContainer">
+      <div id="infoCard">
+        <div id="cardHeader">
+          <h3>Strawberry Tree</h3>
+        </div>
+        <div id="cardImg">
+          <img href="images/strawberry-tree.jpg" alt="A close of of branches on a Strawberry Tree." />
+        </div>
+        <div id="cardText">
+          <p>
+            Arbutus unedo is an evergreen shrub or small tree in the family
+            Ericaceae, native to the Mediterranean and western Europe. The tree
+            is well known for its fruits, which resemble the strawberry — hence
+            the common name "strawberry tree.” However, it is not closely
+            related to the actual strawberries of Fragaria. Its presence in
+            Ireland also lends it the moniker "Irish strawberry tree,” or cain,
+            or cane apple (from the Irish name for the tree, caithne), or
+            sometimes "Killarney strawberry tree.” The strawberry tree is the
+            national tree of Italy because of its green leaves, its white
+            flowers, and its red berries, colors that recall the Italian flag.
+            The strawberry tree began to be considered one of the national
+            symbols of Italy in the 19th century, during the Italian
+            unification.
+          </p>
         </div>
       </div>
     </div>

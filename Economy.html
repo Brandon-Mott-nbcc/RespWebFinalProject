@@ -9,113 +9,15 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="infoPages.css" />
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <style>
-      #grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        background-color: slategray;
-      }
-      #header {
-        border-bottom: solid thick black;
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-      }
-      h1 {
-        text-align: center;
-      }
-      #menu {
-        background-color: #008c45;
-        color: whitesmoke;
-      }
-      #center {
-        text-align: center;
-      }
-      .btnGreen{
-        background-color: #008c45;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnRed{
-        background-color: #CD212A;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnWhite{
-        background-color: whitesmoke;
-        color: black;
-        border: solid thin black;
-        margin: 2px;
-      }
 
-      #infoCard {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        box-sizing: border-box;
-        border: solid thin black;
-      }
-      #cardContainer{
-        margin: 1rem;
-      }
-      #cardHeader {
-        grid-column: 1 / span 2;
-      }
-      #cardImage {
-        grid-row: 1 / span 2;
-      }
-      #cardText {
-        grid-column: 1 / span 2;
-      }
-      @media screen and (min-width: 768px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar {
-          grid-column: 1 / span 2;
-        }
-        #cardContainer {
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-      
-      @media screen and (min-width: 577px) and (max-width: 991) {
-
-      }
-      @media screen and (min-width: 992px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar {
-          grid-column: 1 / span 2;
-        }
-        #cardContainer {
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-      }
-    </style>
-    <title><!--Write the title name here--></title>
+    <title>Economy & Important Cities</title>
   </head>
   <body id="grid">
     <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-md-block">
@@ -168,27 +70,20 @@
               <a class="btn btnGreen" href="MainPage.html">Home</a>
             </li>
             <li class="nav-item">
-            
-              <a class="btn btnWhite" href="FamousPeople.html"
-                >Famous People</a
-              >
-
+              <a class="btn btnWhite" href="FamousPeople.html">Famous People</a>
             </li>
             <li class="nav-item">
               <a class="btn btnRed" href="Location.html">Location</a>
             </li>
             <li class="nav-item">
-
               <a class="btn btnGreen" href="NationalSymbols.html"
                 >Naational Symbols</a
               >
-
             </li>
             <li class="nav-item">
               <a class="btn btnWhite" href="Demographics.html"
                 >Demographics and Culture</a
               >
-
             </li>
             <li class="nav-item">
               <a class="btn btnRed" href="Economy.html">Economy</a>
@@ -201,13 +96,261 @@
     </div>
     <div id="infoCard">
       <div id="cardHeader">
-        <h3>Enter Person/Place here</h3>
+        <h3>Central Region</h3>
       </div>
       <div id="cardImg">
-        <p>random bs go</p>
+        <img
+          href="images/800px-Italian_NUTS1_Central.svg.png"
+          alt="Map higlighting the central region of Italy"
+        />
       </div>
       <div id="cardText">
-        <p>random bs go</p>
+        <p>Central Italy encompasses four of the country's 20 regions:</p>
+        <ul>
+          <li>Lazio</li>
+          <li>Marches (Marche)</li>
+          <li>Tuscany (Toscana)</li>
+          <li>Umbria</li>
+        </ul>
+        <p>
+          The southernmost and easternmost parts of Lazio (Sora, Cassino, Gaeta,
+          Cittaducale, Formia, and Amatrice districts) are often included in
+          Southern Italy (the so-called Mezzogiorno) for cultural and historical
+          reasons since they were once part of the Kingdom of the Two Sicilies,
+          and southern Italian dialects are spoken. As a geographical region,
+          however, central Italy may also include the areas of Abruzzo and
+          Molise, which are otherwise considered part of Southern Italy for
+          socio-cultural, linguistic, and historical reasons.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Northwest Italy</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/800px-Italian_NUTS1_NorthWest.svg.png"
+          alt="Map higlighting the North West region of Italy"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Northwest Italy (Italian: Italia nord-occidentale or just Nord-ovest)
+          is one of the five official statistical regions of Italy used by the
+          National Institute of Statistics (ISTAT), a first level NUTS region
+          and a European Parliament constituency. Northwest encompasses four of
+          the country's 20 regions:
+        </p>
+        <ul>
+          <li>Aosta Valley</li>
+          <li>Liguria</li>
+          <li>Lombardy</li>
+          <li>Piedmont</li>
+        </ul>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>North East</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/800px-Italian_NUTS1_NorthEast.svg.png"
+          alt="Map higlighting the North East region of Italy"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Northeast Italy (Italian: Italia Nord-Orientale or just Nord-est) is
+          one of Italy's five official statistical regions used by the National
+          Institute of Statistics (ISTAT), a first-level NUTS region, and a
+          European Parliament constituency. The Northeast encompasses four of
+          the country's 20 provinces:
+        </p>
+        <ul>
+          <li>Emilia-Romagna</li>
+          <li>Friuli-Venezia Giulia</li>
+          <li>Trentino-Alto Adige/Südtirol</li>
+          <li>Veneto</li>
+        </ul>
+        <p>
+          Culturally and historically, Emilia-Romagna is part of Northwest
+          Italy, but is included in Northeast Italy for statistical reasons.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>South Italy</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/800px-Italian_NUTS1_South.svg.png"
+          alt="Map higlighting the South region of Italy"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          South Italy (Italian: Italia meridionale or just Sud Italia) is one of
+          Italy's five official statistical regions used by the National
+          Institute of Statistics (ISTAT), a first-level NUTS region, and a
+          European Parliament constituency. South Italy encompasses six of the
+          country's 20 regions:
+        </p>
+        <ul>
+          <li>Abruzzo</li>
+          <li>Apulia</li>
+          <li>Basilicata</li>
+          <li>Calabria</li>
+          <li>Campania</li>
+          <li>Molise</li>
+        </ul>
+        <p>
+          South Italy is defined only for statistical and electoral purposes. It
+          should not be confused with the Mezzogiorno, or Southern Italy, which
+          refers to the areas of the former Kingdom of the Two Sicilies (once
+          including the southern half of the Italian peninsula and Sicily) with
+          the usual addition of the Western Mediterranean island of Sardinia.
+          The latter and Sicily form a distinct statistical region called
+          Insular Italy.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Insular Italy</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/800px-Italian_NUTS1_Islands.svg.png"
+          alt="Map higlighting the Insular region of Italy"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Insular Italy (Italian: Italia insulare or just Isole, meaning
+          "islands") is one of the five official statistical regions of Italy
+          used by the National Institute of Statistics (ISTAT), a first level
+          NUTS region and a European Parliament constituency. Insular Italy
+          encompasses two of the country's 20 regions: Sardinia and Sicily.
+          Italy's insular region takes up about one-sixth of the country's total
+          land area. Both of these islands have several smaller islands and
+          archipelagos that are administratively dependent on them. Sicily is
+          the largest island in the Mediterranean Sea, with an area of 25,708
+          square kilometers, and Sardinia is slightly smaller, with an area of
+          24,090 square kilometers. The lowlands in this region are generally
+          confined to narrow coastal strips, with the exceptions being the
+          Campidano and Nurra in Sardinia and the Plain of Catania in Sicily,
+          which are 1200 square kilometers and 430 square kilometers,
+          respectively. The majority of the land in this region is hilly, with
+          hills covering about 70% of the territory. Sicily is home to Mount
+          Etna, the highest non-Alpine peak in Italy and the largest active
+          volcano in Europe, while Sardinia is home to the Gennargentu mountain
+          range.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Palmero</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/palmero.jpg"
+          alt="A picture of Palmero"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Palermo, known locally also as Paliemmu or Palèimmu) is a city in
+          southern Italy, the capital of the autonomous region of Sicily and the
+          Metropolitan City of Palermo, the city's surrounding metropolitan
+          province. The town is noted for its history, culture, architecture,
+          and gastronomy, playing an important role throughout much of its
+          existence; it is over 2,700 years old. Palermo is northwest of the
+          island of Sicily, by the Gulf of Palermo in the Tyrrhenian Sea.
+          Palermo is Sicily's cultural, economic, and tourism capital. It is a
+          city rich in history, culture, art, music, and food. Numerous tourists
+          are attracted to the town for its appealing Mediterranean climate,
+          renowned gastronomy and restaurants, Romanesque, Gothic, Baroque, and
+          Art Nouveau churches, palaces, buildings, and nightlife and music.
+          Palermo is the main Sicilian industrial and commercial center: the
+          main industrial sectors include tourism, services, commerce, and
+          agriculture. Palermo has an international airport and a significant
+          underground economy.[citation needed For cultural, artistic, and
+          economic reasons, Palermo is one of the largest cities in the
+          Mediterranean and is now among the top tourist destinations in both
+          Italy and Europe.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Rome</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/romeScene.jpg"
+          alt="Picture of Rome."
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Rome is the capital and largest city of Italy, located in the
+          central-western part of the country. It is the capital of the Lazio
+          region and the Metropolitan City of Rome, and it is also a special
+          comune called Comune di Roma Capitale. With a population of 2,860,009
+          people living in an area of 1,285 square kilometers (496.1 square
+          miles), Rome is the most populous comune in Italy and the third most
+          populous city in the European Union within city limits. The
+          Metropolitan City of Rome, which has a population of 4,355,725 people,
+          is the most populous city in Italy, and its metropolitan area is the
+          third largest in the country. Rome is situated along the Tiber River
+          and is known for its seven hills and its nickname as the "Eternal
+          City." It is considered the "cradle of Western civilization and
+          Christian culture" and the center of the Catholic Church. Vatican
+          City, the smallest country in the world, is an independent state
+          located within the city limits of Rome, making it the only example of
+          a country within a city.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Venice</h3>
+      </div>
+      <div id="cardImg">
+        <img
+          href="images/venice.jpg"
+          alt="Picture of Venice"
+        />
+      </div>
+      <div id="cardText">
+        <p>
+          Venice is a city located in northeastern Italy and the capital of the
+          Veneto region. It is built on a group of 118 small islands that are
+          connected by more than 400 bridges and separated by canals. These
+          islands are located in the shallow Venetian Lagoon, an enclosed bay
+          between the mouths of the Po and Piave rivers. In 2020, about 258,685
+          people lived in Venice, or the Comune di Venezia, with about 55,000 of
+          them residing in the historic island city of Venice (Centro Storico)
+          and the rest living on the mainland (terraferma). Along with the
+          cities of Padua and Treviso, Venice is included in the
+          Padua-Treviso-Venice Metropolitan Area (PATREVE), which has a total
+          population of 2.6 million people. The name Venice comes from the
+          ancient Veneti people who lived in the region in the 10th century BC.
+          The city was the capital of the Republic of Venice for over a
+          millennium, from 697 to 1797. During this time, it was a major
+          financial and maritime power, as well as a center of commerce and art.
+          It also played a role in the Crusades and the Battle of Lepanto.
+          Venice was the first international financial center and reached its
+          peak of prominence in the 14th century. Throughout its history, Venice
+          had many territories along the Adriatic Sea and within the Italian
+          peninsula, which left a lasting impact on its architecture and
+          culture. In 1797, Napoleon ended the city's sovereignty, and in 1866,
+          it became part of the Kingdom of Italy.
+        </p>
       </div>
     </div>
   </body>

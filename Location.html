@@ -9,111 +9,15 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="infoPages.css" />
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <style>
-      #grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        background-color: slategray;
-      }
-      #header {
-        border-bottom: solid thick black;
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-      }
-      h1 {
-        text-align: center;
-      }
-      #menu {
-        background-color: #008c45;
-        color: whitesmoke;
-      }
-      #center {
-        text-align: center;
-      }
-      .btnGreen{
-        background-color: #008c45;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnRed{
-        background-color: #CD212A;
-        color: whitesmoke;
-        border: solid thin black;
-        margin: 2px;
-      }
-      .btnWhite{
-        background-color: whitesmoke;
-        color: black;
-        border: solid thin black;
-        margin: 2px;
-        }
 
-      #infoCard {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        box-sizing: border-box;
-        border: solid thin black;
-      }
-      #cardContainer{
-        margin: 1rem;
-      }
-      #cardHeader {
-        grid-column: 1 / span 2;
-      }
-      #cardImage {
-        grid-row: 1 / span 2;
-      }
-      #cardText {
-        grid-column: 1 / span 2;
-      }
-
-      @media screen and (min-width: 768px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar {
-          grid-column: 1 / span 2;
-        }
-        #cardContainer {
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-      }
-      @media screen and (min-width: 992px) {
-        h1 {
-          grid-column: 2 / span 1;
-        }
-        #grid {
-          grid-template-columns: 1fr 1fr;
-        }
-        #header {
-          grid-column: 1 / span 2;
-        }
-        #navBar {
-          grid-column: 1 / span 2;
-        }
-        #cardContainer {
-          column-gap: 20px;
-          margin: 1.5rem;
-        }
-      }
-    </style>
-    <title><!--Write the title name here--></title>
+    <title>Locale, Climate & Time Zone</title>
   </head>
   <body id="grid">
     <nav id="navBar" class="navbar navbar-expand-sm bg-light d-none d-md-block">
@@ -121,7 +25,9 @@
         <div class="navbar-brand">Italy</div>
         <div>
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="MainPage.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="MainPage.html"
+              >Home</a
+            >
             <a class="nav-link" href="FamousPeople.html">Famous</a>
             <a class="nav-link" href="Location.html">Location</a>
             <a class="nav-link" href="NationalSymbols.html">National/Natural</a>
@@ -164,21 +70,15 @@
               <a class="btn btnGreen" href="MainPage.html">Home</a>
             </li>
             <li class="nav-item">
-
-              <a class="btn btnWhite" href="FamousPeople.html"
-                >Famous People</a
-              >
-
+              <a class="btn btnWhite" href="FamousPeople.html">Famous People</a>
             </li>
             <li class="nav-item">
               <a class="btn btnRed" href="Location.html">Location</a>
             </li>
             <li class="nav-item">
-
               <a class="btn btnGreen" href="NationalSymbols.html"
                 >Naational Symbols</a
               >
-
             </li>
             <li class="nav-item">
               <a class="btn btnWhite" href="Demographics.html"
@@ -196,13 +96,115 @@
     </div>
     <div id="infoCard">
       <div id="cardHeader">
-        <h3>Enter Person/Place here</h3>
+        <h3>Geography</h3>
       </div>
       <div id="cardImg">
-        <p>random bs go</p>
+        <img href="images/europeMapItaly.jpg" alt="A mapr of Europe highlighting Italy">
       </div>
       <div id="cardText">
-        <p>random bs go</p>
+        <p>
+          Italy is a country located in Southern Europe, also considered part of
+          western Europe.Italy is in the Central European Standard Time Zone, It
+          is bordered by France, Switzerland, Austria, and Slovenia to the north
+          and consists of the Italian Peninsula and the islands of Sicily and
+          Sardinia to the south, as well as many smaller islands. The country's
+          total area is 301,230 square kilometers, with a coastline and border
+          of 7,600 kilometers on the Adriatic, Ionian, and Tyrrhenian seas. It
+          also shares borders with France, Austria, Slovenia, and Switzerland.
+          The enclaves of San Marino and the Vatican City are within Italy,
+          while Campione d'Italia is an Italian exclave in Switzerland. Over 35%
+          of Italy's territory is mountainous, with the Apennine Mountains
+          forming the backbone of the peninsula and the Alps forming most of the
+          northern boundary. Italy is also home to many small volcanic islands
+          and active volcanoes, including Mount Etna, Vulcano, Stromboli, and
+          Vesuvius.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Environment</h3>
+      </div>
+      <div id="cardImg">
+        <img href="images/italyEnvironment.jpg" alt="A national park in Italy.">
+      </div>
+      <div id="cardText">
+        <p>
+          Italy has a history of environmental problems, but it has made efforts
+          to improve and now ranks 84th worldwide for ecological sustainability.
+          National parks cover about 5% of the country. In contrast, the total
+          area protected by national parks, regional parks, and nature reserves
+          covers about 10.5% of the Italian territory and 12% of the coasts
+          protected by marine protected areas. In the past decade, Italy has
+          become a leading producer of renewable energy, ranking as the
+          fourth-largest holder of installed solar energy capacity and the
+          sixth-largest holder of wind power capacity in 2010. Renewable
+          energies provided approximately 37% of Italy's energy consumption in
+          2020. However, the country still faces air pollution and traffic
+          congestion issues, particularly in the industrialized north. Italy is
+          also the twelfth-largest carbon dioxide producer and has faced
+          contamination of watercourses and coastal areas due to industrial and
+          agricultural activity. Waste from industrial actions is sometimes not
+          correctly disposed of, leading to health effects on affected
+          communities. Italy operated nuclear reactors until 1990, but the
+          program was terminated after the Chornobyl disaster and a referendum.
+          In 2008, the government attempted to build up to four nuclear power
+          plants with French technology, but a referendum following the
+          Fukushima nuclear accident struck this down. Deforestation, illegal
+          building developments, and poor land management have caused
+          significant erosion and ecological disasters in Italy's mountainous
+          regions. The country had a 2019 Forest Landscape Integrity Index mean
+          score of 3.65/10, ranking it 142nd globally out of 172 countries.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Biodiversity</h3>
+      </div>
+      <div id="cardImg">
+        <img href="images/italianWolf.jpg" alt="An Italian Wolf, Italy's National animal">
+      </div>
+      <div id="cardText">
+        <p>
+          Italy has a high level of faunal biodiversity, with over 57,000
+          species recorded, representing more than a third of all European
+          fauna. The country has a diverse climate and habitat due to its
+          location on the Mediterranean Sea and its varied geological structure,
+          including the Alps and the Apennines. Italy is home to 4,777 endemic
+          animal species, including the Sardinian long-eared bat, Sardinian red
+          deer, and the Italian newt. There are also 119 mammal species, 550
+          bird species, 69 reptile species, 39 amphibian species, 623 fish
+          species, and 56,213 invertebrate species, including 37,303 insect
+          species. Italy has 6,759 recorded vascular plant species, with 1,371
+          endemic species and subspecies, such as the Sicilian Fir and the
+          Ucriana violet. Italy is a signatory to conservation conventions and
+          directives that protect its fauna and flora, and it has many botanical
+          and historic gardens. The Italian wolf is the national animal, and the
+          strawberry tree is the national tree.
+        </p>
+      </div>
+    </div>
+    <div id="infoCard">
+      <div id="cardHeader">
+        <h3>Climate</h3>
+      </div>
+      <div id="cardImg">
+        <img href="images/weatherMapItaly.jpg" alt="A map of Italy showing average temperatures.">
+      </div>
+      <div id="cardText">
+        <p>
+          Italy has a Mediterranean climate, with local variations due to the
+          country's geomorphology and the influence of the Mediterranean Sea.
+          Inland regions have a subtropical to humid continental and oceanic
+          climate, while coastal areas have mild winters and hot, dry summers.
+          The Po valley region has a humid subtropical climate, with cool
+          winters and hot summers. Average winter temperatures range from 0 °C
+          (32 °F) in the Alps to 12 °C (54 °F) in Sicily, and average summer
+          temperatures range from 20 °C (68 °F) to over 25 °C (77 °F). Northern
+          and central regions can experience thunderstorms from spring to
+          autumn.
+        </p>
       </div>
     </div>
   </body>

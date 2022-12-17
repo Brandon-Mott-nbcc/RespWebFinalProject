@@ -1,0 +1,113 @@
+html{
+  font-size: 0.75rem;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  background-color: slategray;
+}
+#header {
+  border-bottom: solid thick black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+h1 {
+  text-align: center;
+}
+#menu {
+  background-color: #008c45;
+  color: whitesmoke;
+}
+#center {
+  text-align: center;
+}
+.btnGreen {
+  background-color: #008c45;
+  color: whitesmoke;
+  border: solid thin black;
+  margin: 2px;
+}
+.btnRed {
+  background-color: #cd212a;
+  color: whitesmoke;
+  border: solid thin black;
+  margin: 2px;
+}
+.btnWhite {
+  background-color: whitesmoke;
+  color: black;
+  border: solid thin black;
+  margin: 2px;
+}
+.cardGreen{
+  background-color: #008c45;
+}
+.cardWhite{
+  background-color: whitesmoke;
+}
+.cardRed{
+  background-color: #cd212a;
+}
+#infoCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  padding: 2%;
+  border: solid thin black;
+  margin: 1rem;
+}
+
+#cardHeader {
+  grid-column: 1 / span 2;
+}
+#cardImage {
+  grid-column: 3/ span 1;
+  grid-row: 1 / span 2;
+  max-width: 225px;
+  max-height: 225px;
+}
+#cardText {
+  grid-column: 1 / span 2;
+}
+@media screen and (min-width: 768px) {
+  html{
+    font-size: 1rem;
+  }
+  h1 {
+    grid-column: 2 / span 1;
+  }
+  #grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  #header {
+    grid-column: 1 / span 2;
+  }
+  #navBar {
+    grid-column: 1 / span 2;
+  }
+  #infoCard {
+    margin: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  html{
+    font-size: 1.25rem;
+  }
+  h1 {
+    grid-column: 2 / span 1;
+  }
+  #grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #header {
+    grid-column: 1 / span 3;
+  }
+  #navBar {
+    grid-column: 1 / span 3;
+  }
+  #infoCard {
+    margin: 1.5rem;
+  }
+}
