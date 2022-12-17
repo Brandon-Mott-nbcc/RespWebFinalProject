@@ -2,7 +2,7 @@ html{
   font-size: 0.75rem;
 }
 img{
-  width:200px;
+  width: 100%;
   height: auto;
 }
 #grid {
