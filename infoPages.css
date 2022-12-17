@@ -1,3 +1,6 @@
+html{
+  font-size: 0.75rem;
+}
 #grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -38,25 +41,40 @@ h1 {
   border: solid thin black;
   margin: 2px;
 }
+.cardGreen{
+  background-color: #008c45;
+}
+.cardWhite{
+  background-color: whitesmoke;
+}
+.cardRed{
+  background-color: #cd212a;
+}
 #infoCard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   box-sizing: border-box;
+  padding: 2%;
   border: solid thin black;
-}
-#cardContainer {
   margin: 1rem;
 }
+
 #cardHeader {
   grid-column: 1 / span 2;
 }
 #cardImage {
+  grid-column: 3/ span 1;
   grid-row: 1 / span 2;
+  max-width: 225px;
+  max-height: 225px;
 }
 #cardText {
   grid-column: 1 / span 2;
 }
 @media screen and (min-width: 768px) {
+  html{
+    font-size: 1rem;
+  }
   h1 {
     grid-column: 2 / span 1;
   }
@@ -69,28 +87,27 @@ h1 {
   #navBar {
     grid-column: 1 / span 2;
   }
-  #cardContainer {
-    column-gap: 20px;
+  #infoCard {
     margin: 1.5rem;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 991) {
-}
 @media screen and (min-width: 992px) {
+  html{
+    font-size: 1.25rem;
+  }
   h1 {
     grid-column: 2 / span 1;
   }
   #grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   #header {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
   }
   #navBar {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
   }
-  #cardContainer {
-    column-gap: 20px;
+  #infoCard {
     margin: 1.5rem;
   }
 }
