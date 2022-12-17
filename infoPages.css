@@ -1,6 +1,10 @@
 html{
   font-size: 0.75rem;
 }
+img{
+  max-width: 225px;
+  height: auto;
+}
 #grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -64,9 +68,8 @@ h1 {
 }
 #cardImage {
   grid-column: 3/ span 1;
-  grid-row: 1 / span 2;
-  max-width: 225px;
-  max-height: 225px;
+  grid-row: 1 / span 2;  
+  box-sizing: border-box;
 }
 #cardText {
   grid-column: 1 / span 2;
