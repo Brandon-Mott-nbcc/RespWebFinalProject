@@ -71,6 +71,9 @@ h1 {
 #cardText {
   grid-column: 1 / span 2;
 }
+img{
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   html{
     font-size: 1rem;
@@ -111,3 +114,4 @@ h1 {
     margin: 1.5rem;
   }
 }
+
